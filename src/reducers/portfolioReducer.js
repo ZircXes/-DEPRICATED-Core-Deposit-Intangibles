@@ -1,7 +1,7 @@
 import * as types from '../actions/actionTypes';
 import initialState from './initialState';
 
-export default function portfolioReducer(state = initialState.porfolios, action) {
+export default function portfolioReducer(state = initialState.portfolios, action) {
   switch (action.type) {
     case types.LOAD_PORTFOLIOS_SUCCESS:
       return action.portfolios;

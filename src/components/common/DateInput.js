@@ -1,7 +1,7 @@
 // From Pluralsight Course by Cory House
 import React, {PropTypes} from 'react';
 
-const TextInput = ({name, label, onChange, placeholder, value, error, sizeInput}) => {
+const DateInput = ({name, label, onChange, placeholder, value, error, sizeInput}) => {
   let wrapperClass = 'form-group';
   if (error && error.length > 0) {
     wrapperClass += " " + 'has-error';
@@ -12,7 +12,7 @@ const TextInput = ({name, label, onChange, placeholder, value, error, sizeInput}
       <label htmlFor={name}>{label}</label>
       <div className="field">
         <input
-          type="text"
+          type="date"
           name={name}
           className="form-control"
           placeholder={placeholder}
@@ -25,9 +25,7 @@ const TextInput = ({name, label, onChange, placeholder, value, error, sizeInput}
   );
 };
 
-// <div className={wrapperClass}>
-
-TextInput.propTypes = {
+DateInput.propTypes = {
   name: PropTypes.string.isRequired,
   label: PropTypes.string.isRequired,
   onChange: PropTypes.func.isRequired,
@@ -36,4 +34,4 @@ TextInput.propTypes = {
   error: PropTypes.string
 };
 
-export default TextInput;
+export default DateInput;

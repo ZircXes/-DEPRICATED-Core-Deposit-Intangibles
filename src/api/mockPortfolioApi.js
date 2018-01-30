@@ -11,8 +11,8 @@ const portfolios = [
     y1Decay: 0.10,
     segments: 1,
     theta: 1,
-    decayA: 5,
-    decayB: 0,
+    decayA: 0.05,
+    decayB: 0.00,
     beta: 0.00
   },
   {
@@ -20,13 +20,13 @@ const portfolios = [
     type: "NMD",
     title: "Savings Deposits",
     balance: 3052,
-    waRate: 0.60,
+    waRate: 0.0060,
     truncYear: 10,
     y1Decay: 0.10,
     segments: 2,
     theta: 0.6,
-    decayA: 15,
-    decayB: 5,
+    decayA: 0.15,
+    decayB: 0.05,
     beta: 0.40
   },
   {
@@ -34,13 +34,13 @@ const portfolios = [
     type: "NMD",
     title: "Money-Market Deposit Accounts",
     balance: 6000,
-    waRate: 0.95,
+    waRate: 0.0095,
     truncYear: 10,
     y1Decay: 0.10,
     segments: 2,
     theta: 0.6,
-    decayA: 15,
-    decayB: 7,
+    decayA: 0.15,
+    decayB: 0.07,
     beta: 0.80
   },  
   {
@@ -48,13 +48,13 @@ const portfolios = [
     type: "CD",
     title: "Small Time Deposits",
     balance: 411,
-    waRate: 0.00,
+    waRate: 0.012,
     truncYear: 10,
     y1Decay: 0.10,
     segments: 1,
     theta: 1,
-    decayA: 2,
-    decayB: 0,
+    decayA: 0.02,
+    decayB: 0.00,
     beta: 0.00
   }
 ];
